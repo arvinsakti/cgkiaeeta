@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | IAEETA Digital Platform</title>
+    <meta
+      name="description"
+      content="Hubungi IAEETA untuk informasi organisasi, event, sertifikasi, dan publikasi."
+    />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="IAEETA Digital Platform">
+        <span class="brand-emblem" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand-text">
+          <strong>IAEETA</strong>
+          <small>Indonesian Aviation Electronic Engineering & Transportation Association</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Navigasi public">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="events.html">Events</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="articles.html">Articles</a>
+        <a class="is-active" href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-outline" href="login.html">Login</a>
+        <a class="btn btn-gold" href="register.html">Register</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <img
+          class="page-hero-image"
+          src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1900&q=85"
+          alt="Ruang kerja profesional"
+        />
+        <div class="page-hero-shade"></div>
+        <div class="page-hero-content">
+          <p class="eyebrow">Contact IAEETA</p>
+          <h1>Hubungi kami untuk informasi event dan sertifikasi</h1>
+          <p>
+            Tim IAEETA siap membantu kebutuhan informasi organisasi, seminar, sertifikasi, artikel,
+            dan kerja sama profesional aviasi.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-section section">
+        <div class="contact-info">
+          <p class="section-kicker">Contact Information</p>
+          <h2>Informasi kontak</h2>
+          <div class="contact-card-list">
+            <article>
+              <span>Email</span>
+              <a href="mailto:info@iaeeta.or.id">info@iaeeta.or.id</a>
+            </article>
+            <article>
+              <span>Phone</span>
+              <a href="tel:+622112345678">+62 21 1234 5678</a>
+            </article>
+            <article>
+              <span>Address</span>
+              <p>IAEETA Secretariat, Jakarta, Indonesia</p>
+            </article>
+            <article>
+              <span>Office Hour</span>
+              <p>Senin-Jumat, 09.00-17.00 WIB</p>
+            </article>
+          </div>
+        </div>
+
+        <form class="contact-form" aria-label="Form kontak IAEETA">
+          <label>
+            Nama lengkap
+            <input type="text" placeholder="Masukkan nama lengkap" />
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="nama@email.com" />
+          </label>
+          <label>
+            Kategori
+            <select>
+              <option>Informasi Event</option>
+              <option>Informasi Sertifikasi</option>
+              <option>Artikel & Publikasi</option>
+              <option>Kerja Sama</option>
+            </select>
+          </label>
+          <label>
+            Pesan
+            <textarea placeholder="Tulis pesan Anda"></textarea>
+          </label>
+          <button class="btn btn-gold" type="submit">Kirim Pesan <span>→</span></button>
+        </form>
+      </section>
+
+      <section class="map-section" aria-label="Lokasi sekretariat IAEETA">
+        <div class="map-copy">
+          <p class="section-kicker">Location</p>
+          <h2>Sekretariat IAEETA</h2>
+          <p>Jakarta, Indonesia</p>
+        </div>
+        <iframe
+          title="Google Maps lokasi sekretariat IAEETA"
+          src="https://www.google.com/maps?q=Jakarta%2C%20Indonesia&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact-footer">
+      <div class="footer-main">
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-emblem" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="brand-text">
+            <strong>IAEETA</strong>
+            <small>Indonesian Aviation Electronic Engineering & Transportation Association</small>
+          </span>
+        </a>
+        <p>Platform digital untuk company profile, event, sertifikasi, artikel, dan akses pengguna IAEETA.</p>
+      </div>
+      <nav>
+        <h3>Public Pages</h3>
+        <a href="about.html">About Us</a>
+        <a href="events.html">Events</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="articles.html">Articles</a>
+      </nav>
+      <nav>
+        <h3>Account</h3>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="forgot-password.html">Forgot Password</a>
+      </nav>
+      <address>
+        <h3>Contact Us</h3>
+        <span>IAEETA Secretariat, Jakarta, Indonesia</span>
+        <a href="mailto:info@iaeeta.or.id">info@iaeeta.or.id</a>
+        <a href="contact.html">Open contact page</a>
+      </address>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events | IAEETA Digital Platform</title>
+    <meta
+      name="description"
+      content="Daftar seminar, webinar, workshop, dan event komunitas aviasi IAEETA."
+    />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="IAEETA Digital Platform">
+        <span class="brand-emblem" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand-text">
+          <strong>IAEETA</strong>
+          <small>Indonesian Aviation Electronic Engineering & Transportation Association</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Navigasi public">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a class="is-active" href="events.html">Events</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="articles.html">Articles</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-outline" href="login.html">Login</a>
+        <a class="btn btn-gold" href="register.html">Register</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <img
+          class="page-hero-image"
+          src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1900&q=85"
+          alt="Seminar profesional aviasi"
+        />
+        <div class="page-hero-shade"></div>
+        <div class="page-hero-content">
+          <p class="eyebrow">Seminar & Event</p>
+          <h1>Agenda event untuk komunitas profesional aviasi</h1>
+          <p>
+            Temukan seminar, workshop, dan forum komunitas IAEETA untuk meningkatkan pengetahuan,
+            jejaring, dan partisipasi profesional aviasi Indonesia.
+          </p>
+        </div>
+      </section>
+
+      <section class="listing-section section">
+        <div class="listing-toolbar">
+          <div>
+            <p class="section-kicker">Event List</p>
+            <h2>Event terbaru</h2>
+          </div>
+          <div class="filter-pills" aria-label="Filter event">
+            <span class="is-active">All</span>
+            <span>Seminar</span>
+            <span>Workshop</span>
+            <span>Community</span>
+          </div>
+        </div>
+
+        <div class="event-list-grid">
+          <article class="event-list-card">
+            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=900&q=80" alt="Seminar nasional aviasi" />
+            <div class="event-date"><strong>18</strong><span>Jun</span></div>
+            <div>
+              <p class="section-kicker">Seminar Nasional</p>
+              <h3>Aviation Technology & Safety Forum</h3>
+              <p>Forum edukasi keselamatan, teknologi, dan kolaborasi untuk profesional aviasi Indonesia.</p>
+              <ul><li>Jakarta</li><li>Hybrid</li><li>Open Registration</li></ul>
+              <a href="event-detail.html">Lihat Detail <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="event-list-card">
+            <img src="https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&w=900&q=80" alt="Workshop maintenance pesawat" />
+            <div class="event-date"><strong>09</strong><span>Jul</span></div>
+            <div>
+              <p class="section-kicker">Workshop</p>
+              <h3>Aircraft Maintenance Readiness</h3>
+              <p>Workshop kesiapan teknis, dokumentasi maintenance, dan standar operasional aviasi.</p>
+              <ul><li>Bandung</li><li>Offline</li><li>Limited Seats</li></ul>
+              <a href="event-detail.html">Lihat Detail <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="event-list-card">
+            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80" alt="Networking profesional" />
+            <div class="event-date"><strong>24</strong><span>Aug</span></div>
+            <div>
+              <p class="section-kicker">Community</p>
+              <h3>Aviation Professional Networking</h3>
+              <p>Agenda komunitas untuk memperluas koneksi profesional dan kolaborasi industri.</p>
+              <ul><li>Surabaya</li><li>Offline</li><li>Community Forum</li></ul>
+              <a href="event-detail.html">Lihat Detail <span>→</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="flow-section section">
+        <div>
+          <p class="section-kicker">Event Registration Flow</p>
+          <h2>Alur mengikuti event</h2>
+        </div>
+        <div class="flow-steps">
+          <article><strong>01</strong><span>Pilih event</span></article>
+          <article><strong>02</strong><span>Register event</span></article>
+          <article><strong>03</strong><span>Sistem generate e-ticket</span></article>
+          <article><strong>04</strong><span>Email confirmation sent</span></article>
+        </div>
+      </section>
+
+      <section class="register-section">
+        <div>
+          <p class="section-kicker">Account Access</p>
+          <h2>Login atau register untuk mengikuti event</h2>
+          <p>Pengunjung dapat melihat event sebagai guest, lalu membuat akun untuk registrasi dan e-ticket.</p>
+        </div>
+        <div class="auth-actions">
+          <a class="btn btn-gold" href="register.html">Register <span>→</span></a>
+          <a class="btn btn-navy" href="login.html">Login <span>→</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-main">
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-emblem" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="brand-text">
+            <strong>IAEETA</strong>
+            <small>Indonesian Aviation Electronic Engineering & Transportation Association</small>
+          </span>
+        </a>
+        <p>Platform digital untuk company profile, event, sertifikasi, artikel, dan akses pengguna IAEETA.</p>
+      </div>
+      <nav>
+        <h3>Public Pages</h3>
+        <a href="about.html">About Us</a>
+        <a href="events.html">Events</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="articles.html">Articles</a>
+      </nav>
+      <nav>
+        <h3>Account</h3>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="forgot-password.html">Forgot Password</a>
+      </nav>
+      <address>
+        <h3>Contact Us</h3>
+        <span>IAEETA Secretariat, Jakarta, Indonesia</span>
+        <a href="mailto:info@iaeeta.or.id">info@iaeeta.or.id</a>
+        <a href="contact.html">Open contact page</a>
+      </address>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
