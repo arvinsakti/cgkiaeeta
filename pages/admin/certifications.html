@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Certifications | IAEETA Digital Platform</title>
+    <meta name="description" content="Halaman admin untuk mengelola sertifikasi IAEETA." />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+  </head>
+  <body class="dashboard-body admin-body">
+    <aside class="dashboard-sidebar admin-sidebar" aria-label="Navigasi dashboard admin">
+      <a class="brand dashboard-brand" href="dashboard.html"><span class="brand-emblem" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-text"><strong>IAEETA</strong><small>Admin Console</small></span></a>
+      <nav class="dashboard-nav admin-nav"><a href="dashboard.html"><span>⌂</span> Dashboard</a><a href="users.html"><span>◎</span> Users</a><a href="events.html"><span>□</span> Events</a><a class="is-active" href="certifications.html"><span>◇</span> Certifications</a><a href="requirements.html"><span>▣</span> Requirements</a><a href="articles.html"><span>✎</span> Articles</a><a href="#contact"><span>✉</span> Contact Messages</a><a href="#settings"><span>⚙</span> Settings</a></nav>
+      <div class="dashboard-sidebar-card"><span>Certification</span><strong>214 Requests</strong><p>Kelola program, batch jadwal, dan status proses sertifikasi.</p></div>
+    </aside>
+    <main class="dashboard-main admin-main">
+      <header class="dashboard-topbar"><div><p class="section-kicker">Admin Certifications</p><h1>Certifications Management</h1></div><div class="dashboard-user"><span class="user-avatar admin-avatar" aria-hidden="true">AD</span><div><strong>Admin IAEETA</strong><small>Super Admin</small></div><a class="btn btn-navy" href="../public/index.html">Logout</a></div></header>
+      <section class="admin-hero admin-page-hero"><div><p class="eyebrow">Certification Operations</p><h2>Kelola program, jadwal batch, dan pipeline sertifikasi</h2><p>Admin dapat memantau pendaftaran, verifikasi, scheduling, dan penyelesaian program sertifikasi.</p></div><button class="btn btn-gold" type="button">Create Batch</button></section>
+      <section class="admin-stats"><article><span>Programs</span><strong>36</strong><small>Program aktif</small></article><article><span>Requests</span><strong>214</strong><small>54 registered</small></article><article><span>Verification</span><strong>27</strong><small>Perlu review</small></article><article><span>Generated</span><strong>11</strong><small>Bulan ini</small></article></section>
+      <section class="admin-grid"><article class="dashboard-panel admin-panel"><div class="panel-heading"><div><p class="section-kicker">Pipeline</p><h2>Certification Pipeline</h2></div></div><div class="admin-pipeline"><article><strong>54</strong><span>Registered</span></article><article><strong>27</strong><span>Admin Verification</span></article><article><strong>16</strong><span>Scheduling</span></article><article><strong>11</strong><span>Completed</span></article></div></article><article class="dashboard-panel admin-panel"><div class="panel-heading"><div><p class="section-kicker">Batch Schedule</p><h2>Jadwal batch</h2></div><button class="btn btn-navy" type="button">Edit</button></div><div class="admin-list"><article><div><strong>Aircraft Maintenance</strong><span>18-22 Juni 2026 · 18/30</span></div><strong class="status-badge status-open">Open</strong></article><article><div><strong>Avionics System</strong><span>9-12 Juli 2026 · 24/24</span></div><strong class="status-badge status-full">Full</strong></article><article><div><strong>Unmanned Aircraft System</strong><span>4-5 Mei 2026 · 20/20</span></div><strong class="status-badge status-closed">Closed</strong></article></div></article></section>
+    </main>
+    <script src="../../assets/js/app.js"></script>
+  </body>
+</html>

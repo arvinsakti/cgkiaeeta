@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Users | IAEETA Digital Platform</title>
+    <meta name="description" content="Halaman admin untuk mengelola data pengguna IAEETA." />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+  </head>
+  <body class="dashboard-body admin-body">
+    <aside class="dashboard-sidebar admin-sidebar" aria-label="Navigasi dashboard admin">
+      <a class="brand dashboard-brand" href="dashboard.html" aria-label="IAEETA Admin Dashboard">
+        <span class="brand-emblem" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand-text"><strong>IAEETA</strong><small>Admin Console</small></span>
+      </a>
+      <nav class="dashboard-nav admin-nav">
+        <a href="dashboard.html"><span>⌂</span> Dashboard</a>
+        <a class="is-active" href="users.html"><span>◎</span> Users</a>
+        <a href="events.html"><span>□</span> Events</a>
+        <a href="certifications.html"><span>◇</span> Certifications</a>
+        <a href="requirements.html"><span>▣</span> Requirements</a>
+        <a href="articles.html"><span>✎</span> Articles</a>
+        <a href="#contact"><span>✉</span> Contact Messages</a>
+        <a href="#settings"><span>⚙</span> Settings</a>
+      </nav>
+      <div class="dashboard-sidebar-card"><span>Users</span><strong>2,458 Active</strong><p>Kelola user, status akun, dan kategori profesional.</p></div>
+    </aside>
+    <main class="dashboard-main admin-main">
+      <header class="dashboard-topbar">
+        <div><p class="section-kicker">Admin Users</p><h1>Users Management</h1></div>
+        <div class="dashboard-user"><span class="user-avatar admin-avatar" aria-hidden="true">AD</span><div><strong>Admin IAEETA</strong><small>Super Admin</small></div><a class="btn btn-navy" href="../public/index.html">Logout</a></div>
+      </header>
+      <section class="admin-hero admin-page-hero">
+        <div><p class="eyebrow">User Registry</p><h2>Kelola pengguna, status akun, dan data profesional</h2><p>Admin dapat memantau pengguna baru, verifikasi akun, kategori profesional, dan aktivitas terakhir.</p></div>
+        <button class="btn btn-gold" type="button">Add User</button>
+      </section>
+      <section class="admin-stats" aria-label="Ringkasan pengguna">
+        <article><span>Total Users</span><strong>2,458</strong><small>128 user baru</small></article>
+        <article><span>Verified</span><strong>2,104</strong><small>Akun terverifikasi</small></article>
+        <article><span>Pending</span><strong>84</strong><small>Menunggu review</small></article>
+        <article><span>Organizations</span><strong>78</strong><small>Instansi terdaftar</small></article>
+      </section>
+      <section class="dashboard-panel admin-panel">
+        <div class="panel-heading"><div><p class="section-kicker">User List</p><h2>Daftar pengguna</h2></div><div class="admin-actions"><button type="button">Export</button><button class="is-primary" type="button">Filter</button></div></div>
+        <div class="admin-table admin-table-users" role="table" aria-label="Daftar pengguna IAEETA">
+          <div class="admin-table-row admin-table-head" role="row"><span>Name</span><span>Email</span><span>Category</span><span>Status</span><span>Action</span></div>
+          <div class="admin-table-row" role="row"><span>Rizky Pratama</span><span>rizky@email.com</span><span>Aircraft Maintenance</span><strong class="status-badge status-open">Verified</strong><a href="#">View</a></div>
+          <div class="admin-table-row" role="row"><span>Dewi Lestari</span><span>dewi@email.com</span><span>Avionics</span><strong class="status-badge status-full">Pending</strong><a href="#">Review</a></div>
+          <div class="admin-table-row" role="row"><span>Andi Pratama</span><span>andi@email.com</span><span>Safety Management</span><strong class="status-badge status-open">Verified</strong><a href="#">View</a></div>
+        </div>
+      </section>
+    </main>
+    <script src="../../assets/js/app.js"></script>
+  </body>
+</html>

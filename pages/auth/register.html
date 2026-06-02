@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | IAEETA Digital Platform</title>
+    <meta
+      name="description"
+      content="Daftar akun IAEETA untuk mengikuti event, sertifikasi, dan mengakses layanan digital IAEETA."
+    />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../public/index.html" aria-label="IAEETA Digital Platform">
+        <span class="brand-emblem" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand-text">
+          <strong>IAEETA</strong>
+          <small>Indonesian Aviation Electronic Engineering & Transportation Association</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Navigasi public">
+        <a href="../public/index.html">Home</a>
+        <a href="../public/about.html">About Us</a>
+        <a href="../public/events.html">Events</a>
+        <a href="../public/certifications.html">Certifications</a>
+        <a href="../public/articles.html">Articles</a>
+        <a href="../public/contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-outline" href="login.html">Login</a>
+        <a class="btn btn-gold is-active" href="register.html">Register</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="auth-page auth-register">
+        <img
+          class="auth-bg"
+          src="https://images.unsplash.com/photo-1529074963764-98f45c47344b?auto=format&fit=crop&w=1900&q=85"
+          alt="Aircraft during sunset"
+        />
+        <div class="auth-shade"></div>
+        <div class="auth-shell">
+          <aside class="auth-intro">
+            <p class="eyebrow">Create Account</p>
+            <h1>Daftar akun IAEETA</h1>
+            <p>
+              Buat akun untuk mendaftar event, mengikuti program sertifikasi,
+              mengunggah persyaratan, dan menerima sertifikat digital.
+            </p>
+            <div class="auth-metric-grid" aria-label="Layanan setelah registrasi">
+              <article>
+                <strong>01</strong>
+                <span>Register event</span>
+              </article>
+              <article>
+                <strong>02</strong>
+                <span>Upload requirement</span>
+              </article>
+              <article>
+                <strong>03</strong>
+                <span>Access certificate</span>
+              </article>
+            </div>
+          </aside>
+
+          <form class="auth-card auth-form register-form" aria-label="Form daftar akun IAEETA">
+            <div class="auth-card-heading">
+              <p class="section-kicker">Register</p>
+              <h2>Buat akun pengguna</h2>
+              <p>Lengkapi data dasar untuk memulai akses layanan digital IAEETA.</p>
+            </div>
+
+            <div class="form-grid">
+              <label>
+                Nama lengkap
+                <input type="text" name="fullname" placeholder="Masukkan nama lengkap" autocomplete="name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="nama@email.com" autocomplete="email" required />
+              </label>
+              <label>
+                Nomor telepon
+                <input type="tel" name="phone" placeholder="+62..." autocomplete="tel" required />
+              </label>
+              <label>
+                Instansi / perusahaan
+                <input type="text" name="organization" placeholder="Nama instansi" autocomplete="organization" />
+              </label>
+              <label>
+                Kategori profesional
+                <select name="category" required>
+                  <option value="">Pilih kategori</option>
+                  <option>Aircraft Maintenance</option>
+                  <option>Avionics</option>
+                  <option>Safety Management</option>
+                  <option>UAS / Drone</option>
+                  <option>Mahasiswa / Umum</option>
+                </select>
+              </label>
+              <label>
+                Minat layanan
+                <select name="interest" required>
+                  <option value="">Pilih layanan</option>
+                  <option>Seminar & Event</option>
+                  <option>Sertifikasi</option>
+                  <option>Artikel & Publikasi</option>
+                  <option>Kerja Sama</option>
+                </select>
+              </label>
+              <label>
+                Password
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Minimal 8 karakter"
+                  autocomplete="new-password"
+                  required
+                />
+              </label>
+              <label>
+                Konfirmasi password
+                <input
+                  type="password"
+                  name="password-confirmation"
+                  placeholder="Ulangi password"
+                  autocomplete="new-password"
+                  required
+                />
+              </label>
+            </div>
+
+            <label class="check-label">
+              <input type="checkbox" name="terms" required />
+              Saya menyetujui penggunaan data untuk kebutuhan layanan IAEETA.
+            </label>
+
+            <button class="btn btn-gold" type="submit">Daftar Sekarang <span>→</span></button>
+
+            <p class="auth-switch">
+              Sudah memiliki akun?
+              <a href="login.html">Login</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact-footer">
+      <div class="footer-main">
+        <a class="brand footer-brand" href="../public/index.html">
+          <span class="brand-emblem" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="brand-text">
+            <strong>IAEETA</strong>
+            <small>Indonesian Aviation Electronic Engineering & Transportation Association</small>
+          </span>
+        </a>
+        <p>Platform digital untuk company profile, event, sertifikasi, artikel, dan akses pengguna IAEETA.</p>
+      </div>
+      <nav>
+        <h3>Public Pages</h3>
+        <a href="../public/about.html">About Us</a>
+        <a href="../public/events.html">Events</a>
+        <a href="../public/certifications.html">Certifications</a>
+        <a href="../public/articles.html">Articles</a>
+      </nav>
+      <nav>
+        <h3>Account</h3>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="forgot-password.html">Forgot Password</a>
+      </nav>
+      <address>
+        <h3>Contact Us</h3>
+        <span>IAEETA Secretariat, Jakarta, Indonesia</span>
+        <a href="mailto:info@iaeeta.or.id">info@iaeeta.or.id</a>
+        <a href="../public/contact.html">Open contact page</a>
+      </address>
+    </footer>
+
+    <script src="../../assets/js/app.js"></script>
+  </body>
+</html>

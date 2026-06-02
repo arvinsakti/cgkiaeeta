@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Events | IAEETA Digital Platform</title>
+    <meta name="description" content="Halaman admin untuk mengelola event IAEETA." />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+  </head>
+  <body class="dashboard-body admin-body">
+    <aside class="dashboard-sidebar admin-sidebar" aria-label="Navigasi dashboard admin">
+      <a class="brand dashboard-brand" href="dashboard.html"><span class="brand-emblem" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-text"><strong>IAEETA</strong><small>Admin Console</small></span></a>
+      <nav class="dashboard-nav admin-nav">
+        <a href="dashboard.html"><span>⌂</span> Dashboard</a><a href="users.html"><span>◎</span> Users</a><a class="is-active" href="events.html"><span>□</span> Events</a><a href="certifications.html"><span>◇</span> Certifications</a><a href="requirements.html"><span>▣</span> Requirements</a><a href="articles.html"><span>✎</span> Articles</a><a href="#contact"><span>✉</span> Contact Messages</a><a href="#settings"><span>⚙</span> Settings</a>
+      </nav>
+      <div class="dashboard-sidebar-card"><span>Events</span><strong>128 Published</strong><p>Kelola event, registrasi, status publikasi, dan peserta.</p></div>
+    </aside>
+    <main class="dashboard-main admin-main">
+      <header class="dashboard-topbar"><div><p class="section-kicker">Admin Events</p><h1>Events Management</h1></div><div class="dashboard-user"><span class="user-avatar admin-avatar" aria-hidden="true">AD</span><div><strong>Admin IAEETA</strong><small>Super Admin</small></div><a class="btn btn-navy" href="../public/index.html">Logout</a></div></header>
+      <section class="admin-hero admin-page-hero"><div><p class="eyebrow">Event Operations</p><h2>Kelola event, registrasi peserta, dan status publikasi</h2><p>Admin dapat membuat event, memantau peserta, dan mengatur status draft/published/closed.</p></div><button class="btn btn-gold" type="button">Create Event</button></section>
+      <section class="admin-stats" aria-label="Ringkasan event"><article><span>Published Events</span><strong>128</strong><small>36 tahun ini</small></article><article><span>Total Registrants</span><strong>642</strong><small>218 active</small></article><article><span>Waiting Payment</span><strong>36</strong><small>Butuh follow-up</small></article><article><span>Closed Events</span><strong>84</strong><small>Riwayat event</small></article></section>
+      <section class="dashboard-panel admin-panel"><div class="panel-heading"><div><p class="section-kicker">Event List</p><h2>Daftar event</h2></div><div class="admin-actions"><button type="button">Export</button><button class="is-primary" type="button">Filter</button></div></div><div class="admin-table admin-table-events" role="table" aria-label="Daftar event"><div class="admin-table-row admin-table-head" role="row"><span>Event</span><span>Date</span><span>Registrants</span><span>Status</span><span>Action</span></div><div class="admin-table-row" role="row"><span>Seminar Avionics Reliability</span><span>12 Jun 2026</span><span>218</span><strong class="status-badge status-open">Published</strong><a href="#">Manage</a></div><div class="admin-table-row" role="row"><span>Workshop Safety Reporting</span><span>28 Jul 2026</span><span>36</span><strong class="status-badge status-full">Draft Review</strong><a href="#">Review</a></div><div class="admin-table-row" role="row"><span>Career Talk Aviation Electronics</span><span>4 May 2026</span><span>164</span><strong class="status-badge status-closed">Closed</strong><a href="#">Report</a></div></div></section>
+    </main>
+    <script src="../../assets/js/app.js"></script>
+  </body>
+</html>

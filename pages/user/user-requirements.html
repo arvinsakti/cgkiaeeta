@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Requirements | IAEETA User Dashboard</title>
+    <meta name="description" content="Halaman pengguna untuk mengelola dokumen persyaratan sertifikasi IAEETA." />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+  </head>
+  <body class="dashboard-body">
+    <aside class="dashboard-sidebar" aria-label="Navigasi dashboard pengguna">
+      <a class="brand dashboard-brand" href="dashboard.html" aria-label="IAEETA Dashboard">
+        <span class="brand-emblem" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand-text"><strong>IAEETA</strong><small>User Dashboard</small></span>
+      </a>
+      <nav class="dashboard-nav">
+        <a href="dashboard.html"><span>⌂</span> Dashboard</a>
+        <a href="user-events.html"><span>□</span> My Events</a>
+        <a href="user-certifications.html"><span>◇</span> My Certifications</a>
+        <a class="is-active" href="user-requirements.html"><span>▣</span> Requirements</a>
+        <a href="user-certificates.html"><span>✓</span> Certificates</a>
+        <a href="user-profile.html"><span>○</span> Profile</a>
+      </nav>
+      <div class="dashboard-sidebar-card">
+        <span>Completion</span>
+        <strong>8 of 10</strong>
+        <p>Lengkapi dokumen yang masih kurang untuk mempercepat verifikasi.</p>
+      </div>
+    </aside>
+
+    <main class="dashboard-main">
+      <header class="dashboard-topbar">
+        <div><p class="section-kicker">Requirements</p><h1>Dokumen Persyaratan</h1></div>
+        <div class="dashboard-user">
+          <span class="user-avatar" aria-hidden="true">RP</span>
+          <div><strong>Rizky Pratama</strong><small>Aircraft Maintenance Engineer</small></div>
+          <a class="btn btn-navy" href="../public/index.html">Logout</a>
+        </div>
+      </header>
+
+      <section class="user-page-hero">
+        <div>
+          <p class="eyebrow">Upload Requirement</p>
+          <h2>Kelola dokumen untuk kebutuhan verifikasi sertifikasi</h2>
+          <p>Dokumen yang lengkap membantu admin melakukan review dan menjadwalkan proses sertifikasi.</p>
+        </div>
+      </section>
+
+      <section class="requirement-layout">
+        <form class="dashboard-panel upload-panel" aria-label="Form upload dokumen persyaratan">
+          <p class="section-kicker">Upload</p>
+          <h2>Upload dokumen baru</h2>
+          <label>Jenis dokumen<select><option>KTP / ID Card</option><option>CV Profesional</option><option>Surat Pengalaman Kerja</option><option>Training Record</option></select></label>
+          <label>File dokumen<input type="file" /></label>
+          <button class="btn btn-gold" type="submit">Upload Dokumen</button>
+        </form>
+        <article class="dashboard-panel">
+          <div class="panel-heading"><div><p class="section-kicker">Checklist</p><h2>Status dokumen</h2></div></div>
+          <div class="document-list">
+            <div><span>KTP / ID Card</span><strong class="status-badge status-open">Verified</strong></div>
+            <div><span>CV Profesional</span><strong class="status-badge status-open">Verified</strong></div>
+            <div><span>Surat Pengalaman Kerja</span><strong class="status-badge status-full">Review</strong></div>
+            <div><span>Training Record</span><strong class="status-badge status-closed">Missing</strong></div>
+            <div><span>Pas Foto</span><strong class="status-badge status-open">Verified</strong></div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="../../assets/js/app.js"></script>
+  </body>
+</html>

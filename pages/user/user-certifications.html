@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Certifications | IAEETA User Dashboard</title>
+    <meta name="description" content="Halaman pengguna untuk memantau sertifikasi IAEETA." />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+  </head>
+  <body class="dashboard-body">
+    <aside class="dashboard-sidebar" aria-label="Navigasi dashboard pengguna">
+      <a class="brand dashboard-brand" href="dashboard.html" aria-label="IAEETA Dashboard">
+        <span class="brand-emblem" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand-text"><strong>IAEETA</strong><small>User Dashboard</small></span>
+      </a>
+      <nav class="dashboard-nav">
+        <a href="dashboard.html"><span>⌂</span> Dashboard</a>
+        <a href="user-events.html"><span>□</span> My Events</a>
+        <a class="is-active" href="user-certifications.html"><span>◇</span> My Certifications</a>
+        <a href="user-requirements.html"><span>▣</span> Requirements</a>
+        <a href="user-certificates.html"><span>✓</span> Certificates</a>
+        <a href="user-profile.html"><span>○</span> Profile</a>
+      </nav>
+      <div class="dashboard-sidebar-card">
+        <span>Certification Status</span>
+        <strong>2 Active</strong>
+        <p>Satu sertifikasi sedang menunggu verifikasi admin.</p>
+      </div>
+    </aside>
+
+    <main class="dashboard-main">
+      <header class="dashboard-topbar">
+        <div><p class="section-kicker">My Certifications</p><h1>Sertifikasi Saya</h1></div>
+        <div class="dashboard-user">
+          <span class="user-avatar" aria-hidden="true">RP</span>
+          <div><strong>Rizky Pratama</strong><small>Aircraft Maintenance Engineer</small></div>
+          <a class="btn btn-navy" href="../public/index.html">Logout</a>
+        </div>
+      </header>
+
+      <section class="user-page-hero">
+        <div>
+          <p class="eyebrow">Certification Progress</p>
+          <h2>Pantau proses sertifikasi dari registrasi sampai sertifikat terbit</h2>
+          <p>Status dibuat mengikuti alur PRD: register, upload requirement, admin verification, scheduling, certificate generated.</p>
+        </div>
+        <a class="btn btn-gold" href="../public/certifications.html">Daftar Sertifikasi Baru <span>→</span></a>
+      </section>
+
+      <section class="user-content-grid two-column">
+        <article class="user-record-card certification-record">
+          <div>
+            <span class="mini-status status-full">Admin Verification</span>
+            <h2>Aircraft Maintenance Certification</h2>
+            <p>Batch 18-22 Juni 2026 · Jakarta</p>
+            <progress value="68" max="100">68%</progress>
+            <ol class="step-list">
+              <li class="is-done">Register certification</li>
+              <li class="is-done">Upload requirement</li>
+              <li class="is-current">Admin verification</li>
+              <li>Certification scheduling</li>
+              <li>Digital certificate generated</li>
+            </ol>
+          </div>
+          <a class="btn btn-navy" href="../public/certification-detail.html">Lihat Proses</a>
+        </article>
+        <article class="user-record-card certification-record">
+          <div>
+            <span class="mini-status status-open">Certificate Generated</span>
+            <h2>Avionics System Certification</h2>
+            <p>Issued 21 Mei 2026 · Certificate ID IAEETA-AVX-00218</p>
+            <progress value="100" max="100">100%</progress>
+            <ol class="step-list">
+              <li class="is-done">Register certification</li>
+              <li class="is-done">Upload requirement</li>
+              <li class="is-done">Admin verification</li>
+              <li class="is-done">Certification scheduling</li>
+              <li class="is-done">Digital certificate generated</li>
+            </ol>
+          </div>
+          <a class="btn btn-gold" href="user-certificates.html">Download</a>
+        </article>
+      </section>
+    </main>
+    <script src="../../assets/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Dashboard | IAEETA Digital Platform</title>
+    <meta
+      name="description"
+      content="Dashboard pengguna IAEETA untuk mengelola event, sertifikasi, dokumen persyaratan, dan sertifikat digital."
+    />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+  </head>
+  <body class="dashboard-body">
+    <aside class="dashboard-sidebar" aria-label="Navigasi dashboard pengguna">
+      <a class="brand dashboard-brand" href="dashboard.html" aria-label="IAEETA Dashboard">
+        <span class="brand-emblem" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand-text">
+          <strong>IAEETA</strong>
+          <small>User Dashboard</small>
+        </span>
+      </a>
+
+      <nav class="dashboard-nav">
+        <a class="is-active" href="dashboard.html"><span>⌂</span> Dashboard</a>
+        <a href="user-events.html"><span>□</span> My Events</a>
+        <a href="user-certifications.html"><span>◇</span> My Certifications</a>
+        <a href="user-requirements.html"><span>▣</span> Requirements</a>
+        <a href="user-certificates.html"><span>✓</span> Certificates</a>
+        <a href="user-profile.html"><span>○</span> Profile</a>
+      </nav>
+
+      <div class="dashboard-sidebar-card">
+        <span>Account Status</span>
+        <strong>Verified User</strong>
+        <p>Data akun siap digunakan untuk registrasi event dan sertifikasi.</p>
+      </div>
+    </aside>
+
+    <main class="dashboard-main">
+      <header class="dashboard-topbar">
+        <div>
+          <p class="section-kicker">User Area</p>
+          <h1>Dashboard Pengguna</h1>
+        </div>
+        <div class="dashboard-user" id="profile">
+          <span class="user-avatar" aria-hidden="true">RP</span>
+          <div>
+            <strong>Rizky Pratama</strong>
+            <small>Aircraft Maintenance Engineer</small>
+          </div>
+          <a class="btn btn-navy" href="../public/index.html">Logout</a>
+        </div>
+      </header>
+
+      <section class="dashboard-hero">
+        <div>
+          <p class="eyebrow">Welcome Back</p>
+          <h2>Kelola aktivitas IAEETA Anda dalam satu dashboard</h2>
+          <p>
+            Pantau status registrasi event, proses sertifikasi, dokumen persyaratan,
+            dan sertifikat digital yang sudah diterbitkan.
+          </p>
+        </div>
+        <div class="dashboard-hero-actions">
+          <a class="btn btn-gold" href="user-certifications.html">Daftar Sertifikasi <span>→</span></a>
+          <a class="btn btn-glass" href="user-events.html">Lihat Event <span>→</span></a>
+        </div>
+      </section>
+
+      <section class="dashboard-stats" aria-label="Ringkasan akun pengguna">
+        <article>
+          <span>Event Terdaftar</span>
+          <strong>3</strong>
+          <small>1 event mendatang</small>
+        </article>
+        <article>
+          <span>Sertifikasi Aktif</span>
+          <strong>2</strong>
+          <small>1 menunggu verifikasi</small>
+        </article>
+        <article>
+          <span>Dokumen</span>
+          <strong>8/10</strong>
+          <small>Kelengkapan persyaratan</small>
+        </article>
+        <article>
+          <span>Sertifikat Digital</span>
+          <strong>4</strong>
+          <small>Siap diunduh</small>
+        </article>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="dashboard-panel activity-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">Activity</p>
+              <h2>Agenda terdekat</h2>
+            </div>
+            <a href="user-events.html">Semua Event <span>→</span></a>
+          </div>
+          <div class="timeline-list">
+            <article>
+              <time>12 Jun</time>
+              <div>
+                <strong>Seminar Avionics Reliability</strong>
+                <span>Registered · Online Webinar</span>
+              </div>
+            </article>
+            <article>
+              <time>18 Jun</time>
+              <div>
+                <strong>Aircraft Maintenance Certification</strong>
+                <span>Requirement review · Jakarta</span>
+              </div>
+            </article>
+            <article>
+              <time>24 Aug</time>
+              <div>
+                <strong>Aviation Safety Management</strong>
+                <span>Open registration · Surabaya</span>
+              </div>
+            </article>
+          </div>
+        </article>
+
+        <article class="dashboard-panel certification-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">Certification</p>
+              <h2>Status sertifikasi</h2>
+            </div>
+            <a href="user-certifications.html">Browse <span>→</span></a>
+          </div>
+          <div class="progress-list">
+            <article>
+              <div>
+                <strong>Aircraft Maintenance Certification</strong>
+                <span>Admin verification</span>
+              </div>
+              <progress value="68" max="100">68%</progress>
+            </article>
+            <article>
+              <div>
+                <strong>Avionics System Certification</strong>
+                <span>Certificate generated</span>
+              </div>
+              <progress value="100" max="100">100%</progress>
+            </article>
+          </div>
+        </article>
+
+        <article class="dashboard-panel document-panel" id="documents">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">Requirement</p>
+              <h2>Dokumen persyaratan</h2>
+            </div>
+            <button class="btn btn-gold" type="button">Upload</button>
+          </div>
+          <div class="document-list">
+            <div><span>KTP / ID Card</span><strong class="status-badge status-open">Verified</strong></div>
+            <div><span>CV Profesional</span><strong class="status-badge status-open">Verified</strong></div>
+            <div><span>Surat Pengalaman Kerja</span><strong class="status-badge status-full">Review</strong></div>
+            <div><span>Training Record</span><strong class="status-badge status-closed">Missing</strong></div>
+          </div>
+        </article>
+
+        <article class="dashboard-panel certificate-panel" id="certificates">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">Digital Certificate</p>
+              <h2>Sertifikat tersedia</h2>
+            </div>
+            <a href="user-certificates.html">Detail <span>→</span></a>
+          </div>
+          <div class="certificate-card">
+            <div>
+              <span class="brand-emblem mini" aria-hidden="true"><i></i><i></i><i></i></span>
+              <strong>Avionics System Certification</strong>
+              <small>Issued · 21 Mei 2026</small>
+            </div>
+            <a class="btn btn-navy" href="../public/certification-detail.html">Download</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="../../assets/js/app.js"></script>
+  </body>
+</html>

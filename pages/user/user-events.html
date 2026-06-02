@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Events | IAEETA User Dashboard</title>
+    <meta name="description" content="Halaman pengguna untuk melihat event IAEETA yang sudah didaftarkan." />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+  </head>
+  <body class="dashboard-body">
+    <aside class="dashboard-sidebar" aria-label="Navigasi dashboard pengguna">
+      <a class="brand dashboard-brand" href="dashboard.html" aria-label="IAEETA Dashboard">
+        <span class="brand-emblem" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand-text"><strong>IAEETA</strong><small>User Dashboard</small></span>
+      </a>
+      <nav class="dashboard-nav">
+        <a href="dashboard.html"><span>⌂</span> Dashboard</a>
+        <a class="is-active" href="user-events.html"><span>□</span> My Events</a>
+        <a href="user-certifications.html"><span>◇</span> My Certifications</a>
+        <a href="user-requirements.html"><span>▣</span> Requirements</a>
+        <a href="user-certificates.html"><span>✓</span> Certificates</a>
+        <a href="user-profile.html"><span>○</span> Profile</a>
+      </nav>
+      <div class="dashboard-sidebar-card">
+        <span>Next Event</span>
+        <strong>12 Juni 2026</strong>
+        <p>Seminar Avionics Reliability sudah masuk agenda Anda.</p>
+      </div>
+    </aside>
+
+    <main class="dashboard-main">
+      <header class="dashboard-topbar">
+        <div><p class="section-kicker">My Events</p><h1>Event Saya</h1></div>
+        <div class="dashboard-user">
+          <span class="user-avatar" aria-hidden="true">RP</span>
+          <div><strong>Rizky Pratama</strong><small>Aircraft Maintenance Engineer</small></div>
+          <a class="btn btn-navy" href="../public/index.html">Logout</a>
+        </div>
+      </header>
+
+      <section class="user-page-hero">
+        <div>
+          <p class="eyebrow">Registered Events</p>
+          <h2>Kelola event yang sudah Anda ikuti dan jadwalkan</h2>
+          <p>Lihat status pendaftaran, jadwal, lokasi, serta akses detail event IAEETA.</p>
+        </div>
+        <a class="btn btn-gold" href="../public/events.html">Cari Event Baru <span>→</span></a>
+      </section>
+
+      <section class="user-toolbar" aria-label="Filter event pengguna">
+        <button class="is-active" type="button">Semua</button>
+        <button type="button">Mendatang</button>
+        <button type="button">Selesai</button>
+        <button type="button">Menunggu</button>
+      </section>
+
+      <section class="user-content-grid">
+        <article class="user-record-card">
+          <div class="record-date"><strong>12</strong><span>Jun</span></div>
+          <div>
+            <span class="mini-status status-open">Registered</span>
+            <h2>Seminar Avionics Reliability</h2>
+            <p>Webinar teknis mengenai reliability, maintenance planning, dan best practice avionics.</p>
+            <dl><div><dt>Format</dt><dd>Online</dd></div><div><dt>Waktu</dt><dd>09.00 WIB</dd></div></dl>
+          </div>
+          <a class="btn btn-navy" href="../public/event-detail.html">Lihat Detail</a>
+        </article>
+        <article class="user-record-card">
+          <div class="record-date"><strong>28</strong><span>Jul</span></div>
+          <div>
+            <span class="mini-status status-full">Waiting Payment</span>
+            <h2>Workshop Safety Reporting</h2>
+            <p>Pelatihan pelaporan keselamatan dan dokumentasi temuan di lingkungan aviasi.</p>
+            <dl><div><dt>Format</dt><dd>Offline</dd></div><div><dt>Lokasi</dt><dd>Jakarta</dd></div></dl>
+          </div>
+          <a class="btn btn-gold" href="../public/event-detail.html">Selesaikan</a>
+        </article>
+        <article class="user-record-card">
+          <div class="record-date"><strong>04</strong><span>May</span></div>
+          <div>
+            <span class="mini-status status-closed">Completed</span>
+            <h2>Career Talk Aviation Electronics</h2>
+            <p>Sesi pengembangan karier untuk profesional elektronik penerbangan Indonesia.</p>
+            <dl><div><dt>Format</dt><dd>Hybrid</dd></div><div><dt>Status</dt><dd>Hadir</dd></div></dl>
+          </div>
+          <a class="btn btn-navy" href="../public/event-detail.html">Riwayat</a>
+        </article>
+      </section>
+    </main>
+    <script src="../../assets/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Requirements | IAEETA Digital Platform</title>
+    <meta name="description" content="Halaman admin untuk verifikasi dokumen persyaratan pengguna." />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+  </head>
+  <body class="dashboard-body admin-body">
+    <aside class="dashboard-sidebar admin-sidebar" aria-label="Navigasi dashboard admin">
+      <a class="brand dashboard-brand" href="dashboard.html"><span class="brand-emblem" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-text"><strong>IAEETA</strong><small>Admin Console</small></span></a>
+      <nav class="dashboard-nav admin-nav"><a href="dashboard.html"><span>⌂</span> Dashboard</a><a href="users.html"><span>◎</span> Users</a><a href="events.html"><span>□</span> Events</a><a href="certifications.html"><span>◇</span> Certifications</a><a class="is-active" href="requirements.html"><span>▣</span> Requirements</a><a href="articles.html"><span>✎</span> Articles</a><a href="#contact"><span>✉</span> Contact Messages</a><a href="#settings"><span>⚙</span> Settings</a></nav>
+      <div class="dashboard-sidebar-card"><span>Requirement</span><strong>27 Pending</strong><p>Verifikasi dokumen sebelum peserta masuk jadwal sertifikasi.</p></div>
+    </aside>
+    <main class="dashboard-main admin-main">
+      <header class="dashboard-topbar"><div><p class="section-kicker">Admin Requirements</p><h1>Requirements Review</h1></div><div class="dashboard-user"><span class="user-avatar admin-avatar" aria-hidden="true">AD</span><div><strong>Admin IAEETA</strong><small>Super Admin</small></div><a class="btn btn-navy" href="../public/index.html">Logout</a></div></header>
+      <section class="admin-hero admin-page-hero"><div><p class="eyebrow">Verification Queue</p><h2>Review dokumen pengguna dengan status jelas</h2><p>Approve dokumen valid, minta update untuk dokumen kurang, dan teruskan ke scheduling setelah complete.</p></div><button class="btn btn-gold" type="button">Review All</button></section>
+      <section class="admin-stats"><article><span>Submitted</span><strong>96</strong><small>Dokumen masuk</small></article><article><span>Review</span><strong>27</strong><small>Perlu admin</small></article><article><span>Verified</span><strong>61</strong><small>Lolos review</small></article><article><span>Missing</span><strong>8</strong><small>Perlu update</small></article></section>
+      <section class="dashboard-panel admin-panel"><div class="panel-heading"><div><p class="section-kicker">Queue</p><h2>Antrean verifikasi</h2></div><div class="admin-actions"><button type="button">Bulk Request</button><button class="is-primary" type="button">Approve Selected</button></div></div><div class="admin-table admin-table-requirements" role="table" aria-label="Antrean requirement"><div class="admin-table-row admin-table-head" role="row"><span>User</span><span>Document</span><span>Program</span><span>Status</span><span>Action</span></div><div class="admin-table-row" role="row"><span>Rizky Pratama</span><span>Training Record</span><span>Aircraft Maintenance</span><strong class="status-badge status-closed">Missing</strong><a href="#">Request Update</a></div><div class="admin-table-row" role="row"><span>Dewi Lestari</span><span>CV Profesional</span><span>Avionics System</span><strong class="status-badge status-full">Review</strong><a href="#">Verify</a></div><div class="admin-table-row" role="row"><span>Andi Pratama</span><span>KTP / ID Card</span><span>Safety Management</span><strong class="status-badge status-open">Verified</strong><a href="#">Approve</a></div></div></section>
+    </main>
+    <script src="../../assets/js/app.js"></script>
+  </body>
+</html>

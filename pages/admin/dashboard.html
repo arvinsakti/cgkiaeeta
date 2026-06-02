@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard | IAEETA Digital Platform</title>
+    <meta
+      name="description"
+      content="Dashboard admin IAEETA untuk monitoring pengguna, event, sertifikasi, requirement, artikel, dan pesan kontak."
+    />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+  </head>
+  <body class="dashboard-body admin-body">
+    <aside class="dashboard-sidebar admin-sidebar" aria-label="Navigasi dashboard admin">
+      <a class="brand dashboard-brand" href="dashboard.html" aria-label="IAEETA Admin Dashboard">
+        <span class="brand-emblem" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand-text">
+          <strong>IAEETA</strong>
+          <small>Admin Console</small>
+        </span>
+      </a>
+
+      <nav class="dashboard-nav admin-nav">
+        <a class="is-active" href="dashboard.html"><span>⌂</span> Dashboard</a>
+        <a href="users.html"><span>◎</span> Users</a>
+        <a href="events.html"><span>□</span> Events</a>
+        <a href="certifications.html"><span>◇</span> Certifications</a>
+        <a href="requirements.html"><span>▣</span> Requirements</a>
+        <a href="articles.html"><span>✎</span> Articles</a>
+        <a href="#contact"><span>✉</span> Contact Messages</a>
+        <a href="#settings"><span>⚙</span> Settings</a>
+      </nav>
+
+      <div class="dashboard-sidebar-card">
+        <span>Admin Role</span>
+        <strong>Super Admin</strong>
+        <p>Memiliki akses penuh untuk mengelola konten, verifikasi, dan operasional platform.</p>
+      </div>
+    </aside>
+
+    <main class="dashboard-main admin-main">
+      <header class="dashboard-topbar">
+        <div>
+          <p class="section-kicker">Admin Area</p>
+          <h1>Dashboard Admin</h1>
+        </div>
+        <div class="dashboard-user">
+          <span class="user-avatar admin-avatar" aria-hidden="true">AD</span>
+          <div>
+            <strong>Admin IAEETA</strong>
+            <small>Super Admin</small>
+          </div>
+          <a class="btn btn-navy" href="../public/index.html">Logout</a>
+        </div>
+      </header>
+
+      <section class="admin-hero">
+        <div>
+          <p class="eyebrow">Operational Command Center</p>
+          <h2>Monitor aktivitas platform dan kelola proses verifikasi IAEETA</h2>
+          <p>
+            Dashboard ini merangkum data pengguna, event, sertifikasi, requirement,
+            artikel, dan pesan kontak yang perlu ditindaklanjuti admin.
+          </p>
+        </div>
+        <div class="dashboard-hero-actions">
+          <a class="btn btn-gold" href="requirements.html">Review Requirement <span>→</span></a>
+          <a class="btn btn-glass" href="articles.html">Manage Articles <span>→</span></a>
+        </div>
+      </section>
+
+      <section class="admin-stats" aria-label="Ringkasan operasional admin">
+        <article>
+          <span>Total Users</span>
+          <strong>2,458</strong>
+          <small>128 user baru bulan ini</small>
+        </article>
+        <article>
+          <span>Event Registrations</span>
+          <strong>642</strong>
+          <small>36 menunggu konfirmasi</small>
+        </article>
+        <article>
+          <span>Certification Requests</span>
+          <strong>214</strong>
+          <small>27 perlu verifikasi</small>
+        </article>
+      </section>
+
+      <section class="admin-grid">
+        <article class="dashboard-panel admin-panel" id="requirements">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">Verification Queue</p>
+              <h2>Requirement Review</h2>
+            </div>
+            <button class="btn btn-gold" type="button">Review All</button>
+          </div>
+          <div class="admin-table" role="table" aria-label="Requirement review queue">
+            <div class="admin-table-row admin-table-head" role="row">
+              <span>User</span>
+              <span>Program</span>
+              <span>Status</span>
+              <span>Action</span>
+            </div>
+            <div class="admin-table-row" role="row">
+              <span>Rizky Pratama</span>
+              <span>Aircraft Maintenance</span>
+              <strong class="status-badge status-full">Review</strong>
+              <a href="#">Verify</a>
+            </div>
+            <div class="admin-table-row" role="row">
+              <span>Dewi Lestari</span>
+              <span>Avionics System</span>
+              <strong class="status-badge status-open">Complete</strong>
+              <a href="#">Approve</a>
+            </div>
+            <div class="admin-table-row" role="row">
+              <span>Andi Pratama</span>
+              <span>Safety Management</span>
+              <strong class="status-badge status-closed">Missing</strong>
+              <a href="#">Request Update</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="dashboard-panel admin-panel" id="certifications">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">Certification</p>
+              <h2>Certification Pipeline</h2>
+            </div>
+            <a href="#">Manage <span>→</span></a>
+          </div>
+          <div class="admin-pipeline">
+            <article><strong>54</strong><span>Registered</span></article>
+            <article><strong>27</strong><span>Admin Verification</span></article>
+            <article><strong>16</strong><span>Scheduling</span></article>
+            <article><strong>11</strong><span>Completed</span></article>
+          </div>
+        </article>
+
+        <article class="dashboard-panel admin-panel" id="events">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">Events</p>
+              <h2>Event Management</h2>
+            </div>
+            <button class="btn btn-navy" type="button">Create Event</button>
+          </div>
+          <div class="admin-list">
+            <article>
+              <div>
+                <strong>Seminar Avionics Reliability</strong>
+                <span>12 Juni 2026 · 218 registered</span>
+              </div>
+              <strong class="status-badge status-open">Published</strong>
+            </article>
+            <article>
+              <div>
+                <strong>Workshop Safety Reporting</strong>
+                <span>28 Juli 2026 · 36 waiting payment</span>
+              </div>
+              <strong class="status-badge status-full">Draft Review</strong>
+            </article>
+          </div>
+        </article>
+
+        <article class="dashboard-panel admin-panel" id="articles">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">CMS</p>
+              <h2>Article & Publication</h2>
+            </div>
+            <button class="btn btn-navy" type="button">New Article</button>
+          </div>
+          <div class="admin-list">
+            <article>
+              <div>
+                <strong>Standar Kompetensi Avionik 2026</strong>
+                <span>Published · 4,218 views</span>
+              </div>
+              <a href="#">Edit</a>
+            </article>
+            <article>
+              <div>
+                <strong>Kolaborasi Industri Aviasi</strong>
+                <span>Draft · waiting approval</span>
+              </div>
+              <a href="#">Review</a>
+            </article>
+          </div>
+        </article>
+
+        <article class="dashboard-panel admin-panel" id="contact">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">Contact</p>
+              <h2>Pesan masuk</h2>
+            </div>
+            <a href="#">Inbox <span>→</span></a>
+          </div>
+          <div class="admin-list">
+            <article>
+              <div>
+                <strong>Kerja sama sertifikasi</strong>
+                <span>PT Aero Training · 2 jam lalu</span>
+              </div>
+              <strong class="status-badge status-full">New</strong>
+            </article>
+            <article>
+              <div>
+                <strong>Informasi jadwal UAS</strong>
+                <span>Mahasiswa umum · 1 hari lalu</span>
+              </div>
+              <strong class="status-badge status-open">Replied</strong>
+            </article>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="../../assets/js/app.js"></script>
+  </body>
+</html>

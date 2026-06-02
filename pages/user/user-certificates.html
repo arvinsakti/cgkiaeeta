@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificates | IAEETA User Dashboard</title>
+    <meta name="description" content="Halaman pengguna untuk melihat dan mengunduh sertifikat digital IAEETA." />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+  </head>
+  <body class="dashboard-body">
+    <aside class="dashboard-sidebar" aria-label="Navigasi dashboard pengguna">
+      <a class="brand dashboard-brand" href="dashboard.html" aria-label="IAEETA Dashboard">
+        <span class="brand-emblem" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand-text"><strong>IAEETA</strong><small>User Dashboard</small></span>
+      </a>
+      <nav class="dashboard-nav">
+        <a href="dashboard.html"><span>⌂</span> Dashboard</a>
+        <a href="user-events.html"><span>□</span> My Events</a>
+        <a href="user-certifications.html"><span>◇</span> My Certifications</a>
+        <a href="user-requirements.html"><span>▣</span> Requirements</a>
+        <a class="is-active" href="user-certificates.html"><span>✓</span> Certificates</a>
+        <a href="user-profile.html"><span>○</span> Profile</a>
+      </nav>
+      <div class="dashboard-sidebar-card">
+        <span>Available</span>
+        <strong>4 Certificates</strong>
+        <p>Sertifikat digital dapat diunduh setelah proses selesai.</p>
+      </div>
+    </aside>
+
+    <main class="dashboard-main">
+      <header class="dashboard-topbar">
+        <div><p class="section-kicker">Certificates</p><h1>Sertifikat Digital</h1></div>
+        <div class="dashboard-user">
+          <span class="user-avatar" aria-hidden="true">RP</span>
+          <div><strong>Rizky Pratama</strong><small>Aircraft Maintenance Engineer</small></div>
+          <a class="btn btn-navy" href="../public/index.html">Logout</a>
+        </div>
+      </header>
+
+      <section class="user-page-hero">
+        <div>
+          <p class="eyebrow">Digital Certificate</p>
+          <h2>Akses sertifikat yang sudah diterbitkan oleh IAEETA</h2>
+          <p>Setiap sertifikat memuat nomor sertifikat, tanggal terbit, tanggal kedaluwarsa, status sertifikat, dan aksi unduh.</p>
+        </div>
+      </section>
+
+      <section class="certificate-library">
+        <article class="certificate-card">
+          <div>
+            <span class="brand-emblem mini" aria-hidden="true"><i></i><i></i><i></i></span>
+            <strong>Avionics System Certification</strong>
+            <dl class="certificate-meta">
+              <div><dt>Certificate Number</dt><dd>IAEETA-AVX-00218</dd></div>
+              <div><dt>Issue Date</dt><dd>21 Mei 2026</dd></div>
+              <div><dt>Expired Date</dt><dd>21 Mei 2029</dd></div>
+              <div><dt>Certificate Status</dt><dd><span class="certificate-status is-active">Active</span></dd></div>
+            </dl>
+          </div>
+          <a class="btn btn-navy" href="../public/certification-detail.html">Download</a>
+        </article>
+        <article class="certificate-card">
+          <div>
+            <span class="brand-emblem mini" aria-hidden="true"><i></i><i></i><i></i></span>
+            <strong>Aviation Safety Awareness</strong>
+            <dl class="certificate-meta">
+              <div><dt>Certificate Number</dt><dd>IAEETA-SFT-00194</dd></div>
+              <div><dt>Issue Date</dt><dd>4 Mei 2026</dd></div>
+              <div><dt>Expired Date</dt><dd>4 Mei 2028</dd></div>
+              <div><dt>Certificate Status</dt><dd><span class="certificate-status is-active">Active</span></dd></div>
+            </dl>
+          </div>
+          <a class="btn btn-navy" href="../public/certification-detail.html">Download</a>
+        </article>
+        <article class="certificate-card">
+          <div>
+            <span class="brand-emblem mini" aria-hidden="true"><i></i><i></i><i></i></span>
+            <strong>Seminar Avionics Reliability</strong>
+            <dl class="certificate-meta">
+              <div><dt>Certificate Number</dt><dd>IAEETA-EVT-00411</dd></div>
+              <div><dt>Issue Date</dt><dd>12 Maret 2026</dd></div>
+              <div><dt>Expired Date</dt><dd>12 Maret 2027</dd></div>
+              <div><dt>Certificate Status</dt><dd><span class="certificate-status is-expiring">Expiring Soon</span></dd></div>
+            </dl>
+          </div>
+          <a class="btn btn-navy" href="../public/event-detail.html">Download</a>
+        </article>
+      </section>
+    </main>
+    <script src="../../assets/js/app.js"></script>
+  </body>
+</html>

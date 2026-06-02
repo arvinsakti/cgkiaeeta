@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile | IAEETA User Dashboard</title>
+    <meta name="description" content="Halaman pengguna untuk mengelola profil akun IAEETA." />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+  </head>
+  <body class="dashboard-body">
+    <aside class="dashboard-sidebar" aria-label="Navigasi dashboard pengguna">
+      <a class="brand dashboard-brand" href="dashboard.html" aria-label="IAEETA Dashboard">
+        <span class="brand-emblem" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand-text"><strong>IAEETA</strong><small>User Dashboard</small></span>
+      </a>
+      <nav class="dashboard-nav">
+        <a href="dashboard.html"><span>⌂</span> Dashboard</a>
+        <a href="user-events.html"><span>□</span> My Events</a>
+        <a href="user-certifications.html"><span>◇</span> My Certifications</a>
+        <a href="user-requirements.html"><span>▣</span> Requirements</a>
+        <a href="user-certificates.html"><span>✓</span> Certificates</a>
+        <a class="is-active" href="user-profile.html"><span>○</span> Profile</a>
+      </nav>
+      <div class="dashboard-sidebar-card">
+        <span>Profile</span>
+        <strong>Complete</strong>
+        <p>Profil lengkap membantu proses verifikasi sertifikasi.</p>
+      </div>
+    </aside>
+
+    <main class="dashboard-main">
+      <header class="dashboard-topbar">
+        <div><p class="section-kicker">Profile</p><h1>Profil Pengguna</h1></div>
+        <div class="dashboard-user">
+          <span class="user-avatar" aria-hidden="true">RP</span>
+          <div><strong>Rizky Pratama</strong><small>Aircraft Maintenance Engineer</small></div>
+          <a class="btn btn-navy" href="../public/index.html">Logout</a>
+        </div>
+      </header>
+
+      <section class="profile-layout">
+        <article class="dashboard-panel profile-summary">
+          <span class="user-avatar large" aria-hidden="true">RP</span>
+          <h2>Rizky Pratama</h2>
+          <p>Aircraft Maintenance Engineer</p>
+          <div class="profile-tags"><span>Verified User</span><span>Jakarta</span><span>Maintenance</span></div>
+        </article>
+        <form class="dashboard-panel profile-form" aria-label="Form profil pengguna">
+          <div class="panel-heading"><div><p class="section-kicker">Account Data</p><h2>Informasi profil</h2></div></div>
+          <div class="form-grid">
+            <label>Nama lengkap<input type="text" value="Rizky Pratama" /></label>
+            <label>Email<input type="email" value="rizky.pratama@email.com" /></label>
+            <label>Nomor telepon<input type="tel" value="+62 812 3456 7890" /></label>
+            <label>Instansi / perusahaan<input type="text" value="PT Aero Maintenance Indonesia" /></label>
+            <label>Kategori profesional<select><option>Aircraft Maintenance</option><option>Avionics</option><option>Safety Management</option></select></label>
+            <label>Kota<input type="text" value="Jakarta" /></label>
+          </div>
+          <button class="btn btn-gold" type="submit">Simpan Perubahan</button>
+        </form>
+      </section>
+    </main>
+    <script src="../../assets/js/app.js"></script>
+  </body>
+</html>

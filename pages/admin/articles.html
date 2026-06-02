@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Articles | IAEETA Digital Platform</title>
+    <meta name="description" content="Halaman admin untuk mengelola artikel dan publikasi IAEETA." />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+  </head>
+  <body class="dashboard-body admin-body">
+    <aside class="dashboard-sidebar admin-sidebar" aria-label="Navigasi dashboard admin">
+      <a class="brand dashboard-brand" href="dashboard.html"><span class="brand-emblem" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-text"><strong>IAEETA</strong><small>Admin Console</small></span></a>
+      <nav class="dashboard-nav admin-nav"><a href="dashboard.html"><span>⌂</span> Dashboard</a><a href="users.html"><span>◎</span> Users</a><a href="events.html"><span>□</span> Events</a><a href="certifications.html"><span>◇</span> Certifications</a><a href="requirements.html"><span>▣</span> Requirements</a><a class="is-active" href="articles.html"><span>✎</span> Articles</a><a href="#contact"><span>✉</span> Contact Messages</a><a href="#settings"><span>⚙</span> Settings</a></nav>
+      <div class="dashboard-sidebar-card"><span>CMS</span><strong>42 Articles</strong><p>Kelola artikel, publikasi, draft, dan status publish.</p></div>
+    </aside>
+    <main class="dashboard-main admin-main">
+      <header class="dashboard-topbar"><div><p class="section-kicker">Admin Articles</p><h1>Articles & Publications</h1></div><div class="dashboard-user"><span class="user-avatar admin-avatar" aria-hidden="true">AD</span><div><strong>Admin IAEETA</strong><small>Super Admin</small></div><a class="btn btn-navy" href="../public/index.html">Logout</a></div></header>
+      <section class="admin-hero admin-page-hero"><div><p class="eyebrow">Content Management</p><h2>Kelola artikel, publikasi, dan pengumuman IAEETA</h2><p>Admin dapat membuat draft, review konten, publish artikel, dan memantau performa bacaan.</p></div><button class="btn btn-gold" type="button">New Article</button></section>
+      <section class="admin-stats"><article><span>Published</span><strong>42</strong><small>Artikel live</small></article><article><span>Draft</span><strong>8</strong><small>Perlu review</small></article><article><span>Total Views</span><strong>24.8K</strong><small>Bulan ini</small></article><article><span>Categories</span><strong>5</strong><small>Topik aktif</small></article></section>
+      <section class="dashboard-panel admin-panel"><div class="panel-heading"><div><p class="section-kicker">CMS List</p><h2>Daftar artikel</h2></div><div class="admin-actions"><button type="button">Categories</button><button class="is-primary" type="button">Create</button></div></div><div class="admin-table admin-table-articles" role="table" aria-label="Daftar artikel"><div class="admin-table-row admin-table-head" role="row"><span>Title</span><span>Category</span><span>Author</span><span>Status</span><span>Action</span></div><div class="admin-table-row" role="row"><span>Standar Kompetensi Avionik 2026</span><span>Certification</span><span>Admin IAEETA</span><strong class="status-badge status-open">Published</strong><a href="#">Edit</a></div><div class="admin-table-row" role="row"><span>Kolaborasi Industri Aviasi</span><span>Industry</span><span>Nadia Prameswari</span><strong class="status-badge status-full">Draft Review</strong><a href="#">Review</a></div><div class="admin-table-row" role="row"><span>Tips Mengikuti Sertifikasi</span><span>Guide</span><span>Raka Mahendra</span><strong class="status-badge status-closed">Archived</strong><a href="#">Restore</a></div></div></section>
+    </main>
+    <script src="../../assets/js/app.js"></script>
+  </body>
+</html>
